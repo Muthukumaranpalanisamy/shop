@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body background="../../assets/pexels-photo-122400.jpeg" item-width="1350">
+  <br><br><br>
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-3">
+    
+  </div>
+  <div class="col-sm-3">
+      <h2 align="center">SIGNUP</h2>
+    <form>
+      <div>
+      <strong>NAME:</strong><input type="text" id="username" name="username" class="form-control input-sm chat-input" [(ngModel)]="shop.username" #username><br>
+    </div>
+    <div>
+        <strong>PASSWORD:</strong><input type="password" id="password" name="password" class="form-control input-sm chat-input" [(ngModel)]="shop.password" #password><br>
+    </div>
+    <div>
+        <strong>EMAIL ID:</strong><input type="email" id="email" name="email" class="form-control input-sm chat-input" [(ngModel)]="shop.email" #email><br>
+    </div>
+    <div>
+        <strong>PHONE NUMBER:</strong><input type="number" id="phnumber" name="phnumber" class="form-control input-sm chat-input" [(ngModel)]="shop.phnumber" #phnumber><br>
+    </div>
+    <div>
+        <button [disabled]="loading" (click)="addDetails(shop)" class="btn btn-default" ><strong>Signup</strong></button>
+    </div>
+    </form>
+  </div>
+  <div class="col-sm-2"></div>
+</div>
+<br>
+<br><br><br><br><br>
+</body>
+</html>
